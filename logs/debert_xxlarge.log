@@ -1,0 +1,12 @@
+Traceback (most recent call last):
+  File "run.py", line 46, in <module>
+    main()
+  File "run.py", line 42, in main
+    train.main(args)
+  File "/home/mist/wang/sentiment/train.py", line 201, in main
+    tokenizer = BertTokenizer.from_pretrained(pretrain_path)
+  File "/mistgpu/site-packages/transformers/tokenization_utils.py", line 309, in from_pretrained
+    return cls._from_pretrained(*inputs, **kwargs)
+  File "/mistgpu/site-packages/transformers/tokenization_utils.py", line 410, in _from_pretrained
+    list(cls.vocab_files_names.values()),
+OSError: Model name 'WENGSYX/Deberta-Chinese-Large' was not found in tokenizers model name list (bert-base-uncased, bert-large-uncased, bert-base-cased, bert-large-cased, bert-base-multilingual-uncased, bert-base-multilingual-cased, bert-base-chinese, bert-base-german-cased, bert-large-uncased-whole-word-masking, bert-large-cased-whole-word-masking, bert-large-uncased-whole-word-masking-finetuned-squad, bert-large-cased-whole-word-masking-finetuned-squad, bert-base-cased-finetuned-mrpc, bert-base-german-dbmdz-cased, bert-base-german-dbmdz-uncased, bert-base-finnish-cased-v1, bert-base-finnish-uncased-v1, bert-base-dutch-cased). We assumed 'WENGSYX/Deberta-Chinese-Large' was a path, a model identifier, or url to a directory containing vocabulary files named ['vocab.txt'] but couldn't find such vocabulary files at this path or url.
